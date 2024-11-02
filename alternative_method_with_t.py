@@ -24,7 +24,7 @@ def update_plot(t):
     return wire_1,wire_2,y_text
 
 # Define figure properties
-fig=plt.figure(figsize=(16,9),dpi=120,facecolor=(0.8,0.8,0.8))
+fig=plt.figure(figsize=(16,9),dpi=80,facecolor=(0.8,0.8,0.8))
 gs=gridspec.GridSpec(4,4)
 plt.subplots_adjust(left=0.03,bottom=0.035,right=0.99,top=0.97,wspace=0.15,hspace=0.2)
 ax=fig.add_subplot(gs[:,0:4],facecolor=(0.9,0.9,0.9))
@@ -35,8 +35,6 @@ plate_A=ax.plot([-50,50],[-200,-200],'g',linewidth=200)
 
 box_object=dict(boxstyle='square',fc=(0.9,0.9,0.9),ec='r',lw=1)
 y_text=ax.text(400,250,'',size=20,color='r',bbox=box_object)
-
-copyright=ax.text(-580,250,'© Mark Misin Engineering',size=15)
 
 plt.xlim(-600,600)
 plt.ylim(-300,300)
